@@ -1,0 +1,19 @@
+<div class="position">
+  <a class="link" (click)="doLogout()">Logout</a>
+</div>
+<div class="img">
+  <table>
+    <thead>
+    <tr>
+      <td style="width:10%;color: white">JiraIssueId</td>
+      <td style="width:10%;color: white">Revision</td>
+      <td style="width:80%;color: white">Class Path</td>
+    </tr>
+    </thead>
+    <tr *ngFor='let obj of branchList'>
+      <td style="text-align: center">{{obj.jiraIssueId}}</td>
+      <td style="text-align: center">{{obj.revision}}</td>
+      <td style="width:10%">{{obj.classpath}}</td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,36 @@
+
+<div class="img">
+  <div class="position" *ngIf="response.code == 1">
+    <h2 style="color:red">{{response.message}}</h2>
+  </div>
+  <div class="position" *ngIf="response.code == 2">
+    <h2 style="color:red">{{response.message}}</h2>
+  </div>
+  <div class="card">
+    <br>
+    <form (ngSubmit)="onLogin()" method="post">
+      <div class="cardTitle">Login</div>
+      <div class="color">
+        <label for="username">User name:</label>
+        <input required="required" title="This field is required." type="text" name="username" id="username" [(ngModel)] ='login.username'/>
+      </div>
+
+      <div></div>
+
+      <div class="color">
+        <label for="password">Password:</label>
+        <input required="required" title="This field is required." type="password" name="password" id="password" [(ngModel)] = 'login.password'/>
+      </div>
+
+      <div></div>
+
+      <div class="color">
+        <input type="submit" name="login" value="Login" id="login"/>
+        <input type="button" name="cancel" value="Cancel" onclick="this.form.reset()"/>
+
+      </div>
+    </form>
+  </div>
+</div>
+
+

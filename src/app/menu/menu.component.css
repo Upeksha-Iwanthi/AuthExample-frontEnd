@@ -1,0 +1,36 @@
+.nav{
+  background-color: rgba(240, 240, 240, 0.9);
+}
+.link{
+  color: #666;
+  text-align: left;
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.link:hover{
+  color: #0088CC;
+}
+
+.button:active{
+  color: #0088CC;
+}
+
+.linkRight{
+  color: #476466;
+  text-align: right;
+  float: right;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+.position{
+  top: 15%;
+  left: 80%;
+}
